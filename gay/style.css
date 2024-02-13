@@ -130,6 +130,7 @@ input:focus{
     }
     header h1{
         margin-left: 25%;
+        display:inline;
         margin-top:  0;
     }
 }
