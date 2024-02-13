@@ -1,0 +1,135 @@
+* {
+    padding:0;
+    margin:0;
+}
+h1{
+    color:blanchedalmond;
+    display: inline;
+    font-size: 40px;
+    position: absolute;
+    left:30px;
+    line-height: 80px;
+
+}
+header{
+    background-color: #231C1A;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+header li{
+    display: inline;
+    margin-right:3vw ;
+}
+
+header ol{
+    position: absolute;
+    right: 5vw;
+    top:0;
+    line-height: 80px;
+}
+header a {
+    color:white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+main img{
+    position: relative;
+    left:15%;
+}
+main h2{
+    margin: 5px 0;
+}
+footer p{
+    background-color: black;
+    color:#B7B7B7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.title{
+    background-color:antiquewhite;
+    color: white;
+    height: 95vh;
+    background-image: url(pictures/gay\ lobby.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+
+}
+.title h2{
+    margin-top: 50px;
+    font-size: 70px;
+}
+.title p{
+    color: wheat;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.title a{
+    color:white;
+    text-decoration: none;
+    border: 1px solid #acacac;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.dare{
+    background-color:#485652 ;
+    color:white;
+    padding:60px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dare p{
+    margin-bottom: 20px;
+}
+.dare input, .dare button{
+    background-color:transparent;
+    border: 1px solid #949d9a;
+    padding:10px;
+    border-radius: 10px;
+}
+.dare button{
+    width: 80px;
+    cursor: pointer;
+}
+input::placeholder{
+    color:#DDDDDD;
+}
+input:focus{
+    outline: none;
+    border: color #e0e9a3;
+}
+.menu {
+    display: none;
+}
+/* 響應 */
+@media screen and (max-width: 768px){
+    header ol{
+        display:none;
+    }
+    .menu{
+        display: block;
+        background-color:transparent;
+        color:white;
+        font-size:55px;
+        position:absolute;
+        top:15px;
+        left:20px;
+        border:none;
+    }
+    header h1{
+        margin-left: 50%;
+        margin-top:  0;
+    }
+}
